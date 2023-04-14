@@ -25,10 +25,15 @@ web_practice
 
 ## 보유 기술
 
-- HTML, CSS, JavaScript
-- 리액트, Vue.js
-- Node.js, Express
-- MySQL, MongoDB
+- ![HTML](https://img.shields.io/badge/HTML-5-orange)
+- ![CSS](https://img.shields.io/badge/CSS-3-blue)
+- ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+- ![React](https://img.shields.io/badge/React-16-blue)
+- ![Vue.js](https://img.shields.io/badge/Vue.js-3-green)
+- ![Node.js](https://img.shields.io/badge/Node.js-14-green)
+- ![Express](https://img.shields.io/badge/Express-4-blue)
+- ![MySQL](https://img.shields.io/badge/MySQL-5.7-blue)
+- ![MongoDB](https://img.shields.io/badge/MongoDB-4.4-green)
 
 ## 학력
 
