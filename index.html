@@ -1,64 +1,81 @@
-#웹개발에서 index는 대표 표시 페이지다.
-#<…></…> : 태그 - 이름표 의미
 <!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>YouTube Music</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-pzvD+2C5l2Cf+k5bPRFjBkGV5J6qNt/1SkZ7m2K+qK9ADwPhdmMaktd26v/NMab"
-        crossorigin="anonymous">
-    <!-- Custom CSS -->
-    <style>
-        /* 스타일링을 위한 CSS 코드 작성 */
-        /* 헤더 */
-        .header {
-            background-color: #ff0000; /* 헤더 배경색 설정 */
-            padding: 20px; /* 헤더 padding 설정 */
-            color: #ffffff; /* 헤더 글자색 설정 */
-        }
-
-        /* 섹션 */
-        .section {
-            padding: 20px; /* 섹션 padding 설정 */
-        }
-
-        /* 섹션 제목 */
-        .section-title {
-            font-size: 24px; /* 제목 글자크기 설정 */
-            font-weight: bold; /* 제목 글자 두께 설정 */
-            margin-bottom: 10px; /* 제목과 더보기 링크 버튼 사이의 간격 설정 */
-        }
-
-        /* 더보기 링크 버튼 */
-        .more-link {
-            font-size: 16px; /* 더보기 링크 버튼 글자크기 설정 */
-            color: #007bff; /* 더보기 링크 버튼 글자색 설정 */
-            cursor: pointer; /* 더보기 링크 버튼 커서 설정 */
-        }
-
-        /* 앨범 커버 이미지 */
-        .album-cover {
-            width: 100%; /* 앨범 커버 이미지 너비 설정 */
-            height: auto; /* 앨범 커버 이미지 높이 자동 설정 */
-        }
-
-        /* 플레이리스트 버튼 */
-        .playlist-button {
-            display: inline-block; /* 플레이리스트 버튼을 인라인 블록으로 설정하여 가로 정렬 */
-            padding: 10px 20px; /* 플레이리스트 버튼 padding 설정 */
-            background-color: #007bff; /* 플레이리스트 버튼 배경색 설정 */
-            color: #ffffff; /* 플레이리스트 버튼 글자색 설정 */
-            font-size: 16px; /* 플레이리스트 버튼 글자크기 설정 */
-            font-weight: bold; /* 플레이리스트 버튼 글자 두께 설정 */
-            cursor: pointer; /* 플레이리스트 버튼 커서 설정 */
-        }
-    </style>
+    <meta charset="UTF-8">
+    <title>반응형 웹페이지</title>
+    <!-- Bootstrap CSS 파일 추가 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- 자체 CSS 파일 추가 -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- 헤더 -->
-    <header class="header text-center">
-        <img src="youtube_music_logo.png" alt="
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="YT_Music.svg.png"
+                        alt="유튜브 뮤직 로고">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="section1">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2>다시 듣기</h2>
+                </div>
+                <div class="col text-right">
+                    <a href="#">더보기</a>
+                </div>
+            </div>
+            <div class="row">
+                <!-- 첫번째 플레이리스트 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://via.placeholder.com/200x200" alt="플레이리스트 1">
+                        <div class="card-body">
+                            <h5 class="card-title">락찔플리</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- 두번째 플레이리스트 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://via.placeholder.com/200x200" alt="플레이리스트 2">
+                        <div class="card-body">
+                            <h5 class="card-title">힙찔플리</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- 세번째 플레이리스트 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://via.placeholder.com/200x200" alt="플레이리스트 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Driving Pop</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- 네번째 플레이리스트 -->
+                <div class="col-md-3">
+                    <div class="card">
+                        <img class="card-img-top" src="https://via.placeholder.com/200x200" alt="플레이리스트 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Dua Lipa Playlist</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- 플레이리스트 더보기 버튼 -->
+                <div class="col-md-12 text-center">
+                    <button type="button" class="btn btn-primary btn-lg">다음으로</button>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Bootstrap JavaScript 파일 추가 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
